@@ -1,13 +1,33 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
+public class Main {
 
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
-  }
-}
+    public static void main(String[] args) {
+// Declarations
+        String democrat;
+        String republican;
+        String independent;
+
+// User Input
+        System.out.println("Enter D for Democrat");
+        System.out.println("Enter R for Republican");
+        System.out.println("Enter I for Independent");
+        System.out.println("Enter other");
+
+// User Input Simulation
+        String choice = "R";
+
+        if (choice.equals("D"))
+        {
+            System.out.println("You get a democratic donkey");
+        }
+        else if (choice.equals("R"))
+        {
+            System.out.println("You get a republican elephant");
+        }
+        else if (choice.equals("I"))
+        {
+            System.out.println("You get an independent person");
+        }
+        else
+        {
+            System.out.println("You selected other");
+        }
